@@ -1,6 +1,4 @@
-
 'use client';
-import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Header() {
@@ -11,25 +9,25 @@ export default function Header() {
       <div className="px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
+            <a href="/" className="flex items-center space-x-3">
               <div className="text-2xl font-bold text-blue-900" style={{ fontFamily: 'Pacifico, serif' }}>
                 Noi Design
               </div>
-            </Link>
+            </a>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#services" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
+            <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
               Services
-            </Link>
-            <Link href="#about" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
               About us
-            </Link>
-            <Link href="#projects" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
+            </a>
+            <a href="#projects" className="text-gray-700 hover:text-blue-900 font-medium whitespace-nowrap cursor-pointer">
               Projects
-            </Link>
-            <Link href="#contact" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors whitespace-nowrap cursor-pointer">
+            </a>
+            <a href="#contact" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors whitespace-nowrap cursor-pointer">
               Contact us
-            </Link>
+            </a>
           </nav>
           <button 
             className="md:hidden p-2 cursor-pointer"
@@ -43,18 +41,18 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 py-4">
             <div className="flex flex-col space-y-4">
-              <Link href="#services" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
+              <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
                 Services
-              </Link>
-              <Link href="#about" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
+              </a>
+              <a href="#about" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
                 About us
-              </Link>
-              <Link href="#projects" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
+              </a>
+              <a href="#projects" className="text-gray-700 hover:text-blue-900 font-medium cursor-pointer">
                 Projects
-              </Link>
-              <Link href="#contact" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors text-center cursor-pointer">
+              </a>
+              <a href="#contact" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors text-center cursor-pointer">
                 Contact us
-              </Link>
+              </a>
             </div>
           </div>
         )}
